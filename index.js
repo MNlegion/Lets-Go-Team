@@ -9,15 +9,31 @@ const html = require("./src/htmlDisplay");
 const validator = require("email-validator");
 
 // Set up Async functions
-// const writeFileAsync = util.promisify(fs.writeFile);
-// const appendFileAsync = util.promisify(fs.appendFile);
+const writeFileAsync = util.promisify(fs.writeFile);
+const appendFileAsync = util.promisify(fs.appendFile);
 
 // team array and string for html and css
 let teamArray = [];
 let teamString = ``;
 
 // need main function for main call below to run application and generate html
+// Main function to run application
+async function main() {
+    try {
+        await prompt()
 
+        for(let i = 0; i < teamArray.length; i++) {
+            teamString = teamString + html.generateCard(teamArray[i]);
+        }
+
+        let finalHtml = html.generateHTML(teamString)
+
+        writeFileAsync("./dist/index.html", finalHtml);
+
+    } catch (err) {
+        return console.log(err);
+    }
+}
 
 // Inquirer prompts for user command line input
 async function prompt() {

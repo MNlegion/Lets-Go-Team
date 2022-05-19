@@ -1,8 +1,16 @@
 
+<h1 align='center'>Let's Go Team</h1>
 
-  <h1 align='center'>Let's Go Team</h1>
+![license](https://img.shields.io/badge/license-MIT-informational)
 
-  ![license](https://img.shields.io/badge/license-MIT-informational)
+## Table of Contents
+  - [Description](#description)
+  - [Installation](#install)
+  - [Utility](#utility)
+  - [License](#license)
+  - [Contributers](#contributers)
+  - [Tests](#tests)
+  - [Questions](#questions)
 
 ## Description
 A node.js application which captures user input from inquirer to generate an index.html file displaying various members of a work team. The gengerated index.html file is created within the dist directory. 
@@ -34,36 +42,26 @@ A node.js application which captures user input from inquirer to generate an ind
 - WHEN I decide to finish building my team
 - THEN I exit the application, and the HTML is generated
 
+## Installation
+  - npm init
+  - npm install inquirer
+  - npm install jest --save-dev
+  - npm install email-validator
 
-  ## Table of Contents
-  - [Description](#description)
-  - [Installation](#install)
-  - [Utility](#utility)
-  - [License](#license)
-  - [Contributers](#contributers)
-  - [Tests](#tests)
-  - [Questions](#questions)
+## License
+![license](https://img.shields.io/badge/license-MIT-informational)
+<br />
+Covered under the MIT license.
 
-  ## Installation
-    - npm init
-    - npm install inquirer
-    - npm install jest --save-dev
-    - npm install email-validator
+## Contributers
+  Rob Kreuser
 
-  ## License
-  ![license](https://img.shields.io/badge/license-MIT-informational)
-  <br />
-  Covered under the MIT license.
+## Tests
+  Testing is performed with the Jest npm package on four Classes: Manager, Engineer, Intern, and Employee
 
-  ## Contributers
-    Rob Kreuser
+## Questions
+  Please reach out to me for any questions or concerns:
 
-  ## Tests
-    Testing is performed with the Jest on four Classes: Manager, Engineer, Intern, and Employee
+View my GitHub Profile: [MNlegion](https://github.com/MNlegion)
 
-  ## Questions
-    Please reach out to me for any questions or concerns:
-
-  View my GitHub Profile: [MNlegion](https://github.com/MNlegion)
-
-  Contact me: rkreuser30@gmail.com
+Contact me: rkreuser30@gmail.com

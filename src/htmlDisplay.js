@@ -30,12 +30,43 @@ const generateHTML = function (teamString) {
 }
 
 // Generate Info Cards based on role of employee and Inquirer user input
-const generateCard = function (arr) {}
+const generateCard = function (arr) {
+    // Fontawesome Icons change based on role
+    let positionIcon;
+    // Criteria for display
+    let roleInfo;
 
-// remaining generateCard function
+    if (arr.title === "Manager") {
+        positionIcon = `<i class="fas fa-mug-hot"></i>`
+        roleInfo = `Office Number: ${arr.officeNumber}`
+    } else if (arr.title === "Engineer") {
+        positionIcon = `<i class="fas fa-glasses"></i>`
+        roleInfo = `GitHub Username: <a href="https://github.com/${arr.github}" target="_blank">${arr.github}</a>`
+    } else if (arr.title === "Intern") {
+        positionIcon = `<i class="fas fa-user-graduate"></i>`
+        roleInfo = `School: ${arr.school}`
+    }
 
-// HTML and CSS for cards
+    return `
 
+    <div class="col-md-4 col-sm-6 col-12 col-lg-3">    
+    <div class="card shadow-lg mb-5 bg-white rounded">
+        <div class="card-header bg-primary">
+            <h4 class="text-white text-center">${arr.name}</h4>  
+            <h4 class="text-white text-center">${positionIcon}</i> ${arr.title}</h4>
+        </div>
+        <div class="card-body">
+            <ul class="list-unstyled">
+                <li>Employee ID: ${arr.id}</li>
+                <li>Email: <a href="mailto:${arr.email}">${arr.email}</a></li>
+                <li>${roleInfo}</li>
+            </ul>
+        </div>
+    </div>
+</div>
+`
+
+}
 
 exports.generateHTML = generateHTML;
 exports.generateCard = generateCard;

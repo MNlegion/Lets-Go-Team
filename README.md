@@ -7,8 +7,8 @@
 ## Description
 A node.js application which captures user input from inquirer to generate an index.html file displaying various members of a work team. The gengerated index.html file is created within the dist directory. 
 
-<!-- ## Video Link to Application
-  [![Watch the video](./src/Screenshot%202022-05-08%20194955.png)](https://drive.google.com/file/d/1N_W6vXi3ZjE243yoxDP_JKjyzCDcy6Jf/view) -->
+## Video Link to Application
+  [![Watch the video](./src/Screenshot%202022-05-19%20165024.png)](https://drive.google.com/file/d/1xgwh5RY-LtuQZBoTrWl7vEnGuh56aBcV/view)
 
 ## User Story
 - AS A manager

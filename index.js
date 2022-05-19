@@ -30,6 +30,8 @@ async function main() {
 
         writeFileAsync("./dist/index.html", finalHtml);
 
+        console.log("index.html file created successfully");
+
     } catch (err) {
         return console.log(err);
     }
